@@ -7,7 +7,7 @@
      yum: name=httpd state=present
 
    - name: Ammending webserver configuartion file
-     copy: path=/var/www/html/index.html content="This is my managed server file"
+     copy: dest=/var/www/html/index.html content="This is my managed server file"
 
    - name: starting webserver
      service: name=httpd state=started
