@@ -1,5 +1,5 @@
 ---
-- name:New webserver playbook
+- name: New webserver playbook
   hosts: ansibleclient
 
   tasks:
