@@ -1,0 +1,14 @@
+---
+- name:New webserver playbook
+  hosts: ansiblecclient
+
+  tasks:
+   - name: Package installation
+     yum: name=httpd state=present
+
+   - name: Ammending webserver configuartion file
+     copy: path=/var/www/html/index.html content="This is my managed server file"
+
+   - name: starting webserver
+     service: name=httpd state=started
+---
