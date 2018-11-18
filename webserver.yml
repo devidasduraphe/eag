@@ -1,6 +1,6 @@
 ---
 - name:New webserver playbook
-  hosts: ansiblecclient
+  hosts: ansibleclient
 
   tasks:
    - name: Package installation
